@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from banner.views import anothepage,contact,index,examples,page
- 
+from banner.views import anothepage, contact, index, examples, page, sign
+
 urlpatterns = [
     path('admin.html/', admin.site.urls),
     path('another_page.html/', anothepage),
@@ -25,4 +25,5 @@ urlpatterns = [
     path('', index),
     path('examples.html/', examples),
     path('page.html/', page),
+    path('sign.html/', sign),
 ]

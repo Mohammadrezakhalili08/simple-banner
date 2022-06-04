@@ -11,3 +11,5 @@ def index (request):
     return render(request,'banner/index.html',context={})
 def page (request):
     return render(request,'banner/page.html',context={})
+def sign (request):
+    return render(request,'banner/sign.html',context={})
